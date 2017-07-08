@@ -25,4 +25,9 @@ public class DragonTest {
   public void checkFoodLevel() {
     assertEquals(6, dragon.getFoodLevel());
   }
+
+  @Test
+  public void checkSize() {
+    assertEquals(20.00, dragon.getSize(), 0.01);
+  }
 }
