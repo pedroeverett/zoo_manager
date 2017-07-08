@@ -43,4 +43,11 @@ public class SwimEnclosureTest {
     assertEquals(1, swimEnclosure.removeAnimalByName(seaSerpent));
   }
 
+  @Test 
+  public void checkCannotAddAnimalIfTheyEatEachOther() {
+    swimEnclosure.addAnimal(seaSerpent);
+    swimEnclosure.addAnimalIfTheyWontEatEachOther(nessy);
+    assertEquals(40.00, swimEnclosure.getSize(), 0.01);
+  }
+
 }
