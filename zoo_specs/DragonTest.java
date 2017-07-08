@@ -45,4 +45,9 @@ public class DragonTest {
   public void checkWingType() {
     assertEquals("Broad Wing", dragon.getWingType());
   }
+
+  @Test
+  public void  checkFlyable() {
+    assertEquals("Fly high high", dragon.fly());
+  }
 }
