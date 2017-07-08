@@ -8,6 +8,6 @@ public class Nessy extends Animal implements Swimmable {
   }
 
   public String swim() {
-    return "Swim around the lake and you will never see me";
+    return "Swim around and you will never see me";
   }
 }
