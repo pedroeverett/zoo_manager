@@ -38,4 +38,9 @@ public class SwimEnclosure extends Enclosure {
     }
   }
 
+  public int removeAnimalByName(Swimmable animal) {
+    this.cage.remove(animal);
+    return getNumberAnimalsInCage();
+  }
+
 }
