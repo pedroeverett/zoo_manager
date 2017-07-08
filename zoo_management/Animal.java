@@ -23,7 +23,7 @@ public abstract class Animal implements Sellable{
     return this.name;
   }
 
-  public String canMakeSound() {
+  public String getSound() {
     return this.sound;
   }
 

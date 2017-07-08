@@ -8,12 +8,17 @@ public class DragonTest {
 
   @Before
   public void before() {
-    dragon = new Dragon("Dragonis", "Grrrr", 4, 6, 20.00, 10, "Broad Wing");
+    dragon = new Dragon("Dragonis", "Draarrr", 4, 6, 20.00, 10, "Broad Wing");
   }
 
   @Test
   public void checkHasName() {
     assertEquals("Dragonis", dragon.getName());
+  }
+
+  @Test
+  public void checkCanMakeSound() {
+    assertEquals("Draarrr", dragon.getSound());
   }
 
   @Test
