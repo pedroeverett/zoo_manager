@@ -1,6 +1,6 @@
 package zoo_management;
 
-public abstract class Animal {
+public abstract class Animal implements Sellable{
 
   protected String name;
   protected String sound;
@@ -40,6 +40,11 @@ public abstract class Animal {
 
   public int getDangerLevel() {
     return this.dangerLevel;
+  }
+
+  public Boolean sellable() {
+    if (this.age < 5)
+      return true;
   }
 
 
