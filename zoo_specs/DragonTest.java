@@ -15,4 +15,9 @@ public class DragonTest {
   public void checkHasName() {
     assertEquals("Dragonis", dragon.getName());
   }
+
+  @Test
+  public void checkAge() {
+    assertEquals(4, dragon.getAge());
+  }
 }
