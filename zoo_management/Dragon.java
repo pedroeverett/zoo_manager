@@ -11,7 +11,7 @@ public class Dragon extends Animal implements Flyable {
   }
 
   public String getWingType() {
-    return wingType;
+    return this.wingType;
   }
 
   public String fly() {

@@ -40,4 +40,9 @@ public class DragonTest {
   public void checkCanBeSold() {
     assertTrue(dragon.sellable());
   }
+
+  @Test
+  public void checkWingType() {
+    assertEquals("Broad Wing", dragon.getWingType());
+  }
 }
