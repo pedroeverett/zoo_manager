@@ -45,8 +45,8 @@ public class SwimEnclosure extends Enclosure {
 
   public void addAnimalIfTheyWontEatEachOther(Swimmable newAnimal) {
     double animalSize = newAnimal.getSize();
-    for (SwimEnclosure animal : this.cage)
-    if (animalSize <= this.size && animal.getgetDangerLevel() != newAnimal.getDangerLevel()) {
+    for (Swimmable animal : cage)
+    if (animalSize <= this.size && animal.getDangerLevel() == newAnimal.getDangerLevel()) {
       this.cage.add(newAnimal);
       this.size -= animalSize;
     }
