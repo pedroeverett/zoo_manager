@@ -20,4 +20,9 @@ public class DragonTest {
   public void checkAge() {
     assertEquals(4, dragon.getAge());
   }
+
+  @Test
+  public void checkFoodLevel() {
+    assertEquals(6, dragon.getFoodLevel());
+  }
 }
