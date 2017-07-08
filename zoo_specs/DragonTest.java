@@ -30,4 +30,9 @@ public class DragonTest {
   public void checkSize() {
     assertEquals(20.00, dragon.getSize(), 0.01);
   }
+
+  @Test
+  public void checkDangerLevel() {
+    assertEquals(10, dragon.getDangerLevel());
+  }
 }
