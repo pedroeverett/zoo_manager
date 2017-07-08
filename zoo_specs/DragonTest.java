@@ -35,4 +35,9 @@ public class DragonTest {
   public void checkDangerLevel() {
     assertEquals(10, dragon.getDangerLevel());
   }
+
+  @Test
+  public void checkCanBeSold() {
+    assertTrue(dragon.sellable());
+  }
 }
