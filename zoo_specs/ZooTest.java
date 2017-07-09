@@ -15,6 +15,11 @@ public class ZooTest {
   Griffin griffin;
   Manticore manticore;
   Dragon dragon;
+  Visitor visitor1;
+  Visitor visitor2;
+  Visitor visitor3;
+  Visitor visitor4;
+  Visitor visitor5;
 
   @Before
   public void before() {
@@ -29,6 +34,11 @@ public class ZooTest {
     nessy = new Nessy("Nessy", "Glup glup Gluuupp", 2000, 5, 30.00, 5);
     unicorn = new Unicorn("Flufy", "Prrrrr", 3, 1, 7.00, 2, "White and curly");
     wereWolf = new WereWolf("Grumpy", "Rrrrr", 2, 3, 5.00, 7, "Brown");
+    visitor1 = new Visitor("Pedro", 40);
+    visitor2 = new Visitor("Liliana", 38);
+    visitor3 = new Visitor("Gabriel", 1);
+    visitor4 = new Visitor("Laura", 65);
+    visitor5 = new Visitor("Justin", 5);
   }
 
   @Test
