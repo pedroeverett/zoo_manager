@@ -18,7 +18,7 @@ public class ZooTest {
 
   @Before
   public void before() {
-    zoo = new Zoo("Fantasy Zoo", 5000.00);
+    zoo = new Zoo("Fantasy Zoo", 5000.00, 5, 17.00);
     generalEnclosure = new GeneralEnclosure("GeneralEnclosure1", EnclosureType.GENERAL, 40.00);
     swimEnclosure = new SwimEnclosure("SwimEnclosure1", EnclosureType.SWIM, 60.00);
     flyEnclosure = new FlyEnclosure("FlyEnclosure1", EnclosureType.FLY, 50.00);
@@ -39,6 +39,16 @@ public class ZooTest {
   @Test
   public void checkMoney() {
     assertEquals(5000.00, zoo.getMoney(), 0.01);
+  }
+
+  @Test
+  public void checkTicketsAvailable() {
+    assertEquals(5, zoo.getTicketsAvailable());
+  }
+
+  @Test
+  public void checkTicketsPrice() {
+    assertEquals(17.00, zoo.getTicketPrice(), 0.01);
   }
 
   @Test
