@@ -81,4 +81,10 @@ public class ZooTest {
     assertEquals(3, zoo.getNumberEnclosures());
   }
 
+  @Test 
+  public void checkDiscountPrice() {
+    assertEquals(17.00, zoo.discountPrice(visitor1), 0.01);
+    assertEquals(8.50, zoo.discountPrice(visitor5), 0.01);
+  }
+
 }

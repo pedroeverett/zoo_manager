@@ -45,6 +45,10 @@ public class Zoo {
     return this.enclosureList.size();
   }
 
+  public int getNumberVisitors() {
+    return this.enclosureList.size();
+  }
+
   public void addAnimalToList(Animal animal) {
     this.animalList.add(animal);
   }
@@ -52,6 +56,21 @@ public class Zoo {
   public void addEnclosureToList(Enclosure enclosure) {
     this.enclosureList.add(enclosure);
   }
+
+  public double discountPrice(Visitor visitor) {
+    if (visitor.getAge() <= 6 || visitor.getAge() >= 60) {
+      double discountPrice = this.ticketPrice - (this.ticketPrice * 0.5);
+      return discountPrice;
+    }
+    return this.ticketPrice;
+  }
+
+  // public void sellTicket(Visitor visitor) {
+  //   if(this.tickets >=1) {
+  //     this.tickets -= 1;
+  //     this.enclosureList.add(visitor);
+  //   }
+  // }
 
 
 }
