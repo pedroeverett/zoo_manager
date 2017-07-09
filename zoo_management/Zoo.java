@@ -36,5 +36,9 @@ public class Zoo {
     this.animalList.add(animal);
   }
 
+  public void addEnclosureToList(Enclosure enclosure) {
+    this.enclosureList.add(enclosure);
+  }
+
 
 }

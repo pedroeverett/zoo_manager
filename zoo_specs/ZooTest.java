@@ -53,4 +53,12 @@ public class ZooTest {
     assertEquals(2, zoo.getNumberAnimals());
   }
 
+  @Test
+  public void canAddEnclosure() {
+    zoo.addEnclosureToList(generalEnclosure);
+    zoo.addEnclosureToList(flyEnclosure);
+    zoo.addEnclosureToList(swimEnclosure);
+    assertEquals(3, zoo.getNumberEnclosures());
+  }
+
 }
