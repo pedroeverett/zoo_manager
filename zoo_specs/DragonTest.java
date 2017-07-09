@@ -55,4 +55,10 @@ public class DragonTest {
   public void  checkFlyable() {
     assertEquals("Fly high high", dragon.fly());
   }
+
+  @Test
+  public void candFeedAnimal() {
+    dragon.feedAnimal(10);
+    assertEquals(16, dragon.getFoodLevel());
+    }
 }

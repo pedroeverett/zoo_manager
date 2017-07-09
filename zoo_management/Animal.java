@@ -50,5 +50,9 @@ public abstract class Animal implements Sellable{
     return false;
   }
 
+  public void feedAnimal(int food) {
+    this.foodLevel += food;
+  }
+
 
 }
