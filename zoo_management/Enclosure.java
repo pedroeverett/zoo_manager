@@ -24,9 +24,4 @@ public abstract class Enclosure {
     return this.size;
   }
 
-  //public checkFreeSpace() ?? or not because of getsize??
-
-  // public abstract addAnimal();
-  // create a if method to check animal size fits size of enclosure, and check the free space before.
-
 }
