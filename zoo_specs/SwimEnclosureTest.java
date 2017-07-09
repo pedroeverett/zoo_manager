@@ -50,4 +50,12 @@ public class SwimEnclosureTest {
     assertEquals(40.00, swimEnclosure.getSize(), 0.01);
   }
 
+  @Test
+  public void checkAnimalRampage() {
+    swimEnclosure.addAnimal(seaSerpent);
+    swimEnclosure.addAnimalIfTheyWontEatEachOther(nessy);
+    assertEquals(1, swimEnclosure.randomAnimalRampage());
+  }
+
+
 }
