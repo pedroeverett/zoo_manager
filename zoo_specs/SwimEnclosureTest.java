@@ -53,7 +53,7 @@ public class SwimEnclosureTest {
   @Test
   public void checkAnimalRampage() {
     swimEnclosure.addAnimal(seaSerpent);
-    swimEnclosure.addAnimalIfTheyWontEatEachOther(nessy);
+    swimEnclosure.addAnimal(nessy);
     assertEquals(1, swimEnclosure.randomAnimalRampage());
   }
 
