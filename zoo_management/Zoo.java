@@ -19,6 +19,7 @@ public class Zoo {
     this.ticketPrice = ticketPrice;
     this.enclosureList = new ArrayList<Enclosure>();
     this.animalList = new ArrayList<Animal>();
+    this.visitorList = new ArrayList<Visitor>();
   }
 
   public String getName() {
@@ -46,7 +47,7 @@ public class Zoo {
   }
 
   public int getNumberVisitors() {
-    return this.enclosureList.size();
+    return this.visitorList.size();
   }
 
   public void addAnimalToList(Animal animal) {
@@ -57,6 +58,10 @@ public class Zoo {
     this.enclosureList.add(enclosure);
   }
 
+  public void addVisitorToList(Visitor visitor) {
+    this.visitorList.add(visitor);
+  }
+
   public double discountPrice(Visitor visitor) {
     if (visitor.getAge() <= 6 || visitor.getAge() >= 60) {
       double discountPrice = this.ticketPrice - (this.ticketPrice * 0.5);
@@ -65,12 +70,13 @@ public class Zoo {
     return this.ticketPrice;
   }
 
-  // public void sellTicket(Visitor visitor) {
-  //   if(this.tickets >=1) {
-  //     this.tickets -= 1;
-  //     this.enclosureList.add(visitor);
-  //   }
-  // }
+  public void sellTicket(Visitor visitor) {
+    if(this.tickets >=1) {
+      this.tickets -= 1;
+      this.visitorList.add(visitor);
+      this.money += discountPrice(visitor);
+    }
+  }
 
 
 }

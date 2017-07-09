@@ -81,10 +81,25 @@ public class ZooTest {
     assertEquals(3, zoo.getNumberEnclosures());
   }
 
+  @Test
+  public void canAddVisitor() {
+    zoo.addVisitorToList(visitor1);
+    zoo.addVisitorToList(visitor4);
+    assertEquals(2, zoo.getNumberVisitors());
+  }
+
   @Test 
   public void checkDiscountPrice() {
     assertEquals(17.00, zoo.discountPrice(visitor1), 0.01);
     assertEquals(8.50, zoo.discountPrice(visitor5), 0.01);
+  }
+
+  @Test
+  public void canSellTicketAndAddVisitor() {
+    zoo.sellTicket(visitor1);
+    zoo.sellTicket(visitor5);
+    assertEquals(2, zoo.getNumberVisitors());
+    assertEquals(5025.50, zoo.getMoney(), 0.01);
   }
 
 }
