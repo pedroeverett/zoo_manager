@@ -6,14 +6,14 @@ public class Zoo {
 
   private String name;
   private double money;
-  private ArrayList<Enclosure> enclosure;
-  private ArrayList<Animal> animal;
+  private ArrayList<Enclosure> enclosureList;
+  private ArrayList<Animal> animalList;
 
   public Zoo(String name, double money) {
     this.name = name;
     this.money = money;
-    this.enclosure = new ArrayList<Enclosure>();
-    this.animal = new ArrayList<Animal>();
+    this.enclosureList = new ArrayList<Enclosure>();
+    this.animalList = new ArrayList<Animal>();
   }
 
   public String getName() {
@@ -24,6 +24,17 @@ public class Zoo {
     return this.money;
   }
 
+  public int getNumberAnimals() {
+    return this.animalList.size();
+  }
+
+  public int getNumberEnclosures() {
+    return this.enclosureList.size();
+  }
+
+  public void addAnimalToList(Animal animal) {
+    this.animalList.add(animal);
+  }
 
 
 }

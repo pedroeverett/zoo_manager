@@ -41,5 +41,16 @@ public class ZooTest {
     assertEquals(5000.00, zoo.getMoney(), 0.01);
   }
 
+  @Test
+  public void checkAnimalStarEmpty() {
+    assertEquals(0, zoo.getNumberAnimals());
+  }
+
+  @Test
+  public void canAddAnimal() {
+    zoo.addAnimalToList(griffin);
+    zoo.addAnimalToList(nessy);
+    assertEquals(2, zoo.getNumberAnimals());
+  }
 
 }
