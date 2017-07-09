@@ -83,5 +83,17 @@ public class Zoo {
     return getNumberVisitors();
   }
 
+  public boolean checkAnimalIsInTheList(Animal thatAnimal) {
+    for(Animal animal : animalList) {
+      animal = thatAnimal;
+      return true;
+    }
+    return false;
+  }
+
+  // public void sellAnimal(Animal animal) {
+  //   if(checkAnimalIsInTheList(animal) == true && animal.sellable() == true)
+  // }
+
 
 }

@@ -112,4 +112,11 @@ public class ZooTest {
     assertEquals(4, zoo.removeVisitorByName(visitor3));
   }
 
+  @Test
+  public void checkAnimalIsInTheList() {
+    zoo.addAnimalToList(griffin);
+    zoo.addAnimalToList(nessy);
+    assertEquals(true, zoo.checkAnimalIsInTheList(griffin));
+  }
+
 }
