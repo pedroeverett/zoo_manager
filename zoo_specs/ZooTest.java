@@ -27,13 +27,13 @@ public class ZooTest {
     generalEnclosure = new GeneralEnclosure("GeneralEnclosure1", EnclosureType.GENERAL, 40.00);
     swimEnclosure = new SwimEnclosure("SwimEnclosure1", EnclosureType.SWIM, 60.00);
     flyEnclosure = new FlyEnclosure("FlyEnclosure1", EnclosureType.FLY, 50.00);
-    griffin = new Griffin("Grinoidis", "Griiiiii", 10, 3, 10.00, 8, "Feather Wing");
-    manticore = new Manticore("Manty", "Miiiirrrr", 8, 1, 12.00, 7, "Medium Wing");
-    dragon = new Dragon("Dragonis", "Draarrr", 4, 6, 20.00, 10, "Broad Wing");
-    seaSerpent = new SeaSerpent("Serpentine", "Fssss", 30, 2, 20.00, 10);
-    nessy = new Nessy("Nessy", "Glup glup Gluuupp", 2000, 5, 30.00, 5);
-    unicorn = new Unicorn("Flufy", "Prrrrr", 3, 1, 7.00, 2, "White and curly");
-    wereWolf = new WereWolf("Grumpy", "Rrrrr", 2, 3, 5.00, 7, "Brown");
+    griffin = new Griffin("Grinoidis", "Griiiiii", 10, 3, 10.00, 8, "Feather Wing", 3000.00);
+    manticore = new Manticore("Manty", "Miiiirrrr", 8, 1, 12.00, 7, "Medium Wing", 3500.00);
+    dragon = new Dragon("Dragonis", "Draarrr", 4, 6, 20.00, 10, "Broad Wing", 7000.00);
+    seaSerpent = new SeaSerpent("Serpentine", "Fssss", 30, 2, 20.00, 10, 8000.00);
+    nessy = new Nessy("Nessy", "Glup glup Gluuupp", 2000, 5, 30.00, 5, 9000.00);
+    unicorn = new Unicorn("Flufy", "Prrrrr", 3, 1, 7.00, 2, "White and curly", 4000.00);
+    wereWolf = new WereWolf("Grumpy", "Rrrrr", 2, 3, 5.00, 7, "Brown", 2000.00);
     visitor1 = new Visitor("Pedro", 40);
     visitor2 = new Visitor("Liliana", 38);
     visitor3 = new Visitor("Gabriel", 1);
@@ -117,6 +117,16 @@ public class ZooTest {
     zoo.addAnimalToList(griffin);
     zoo.addAnimalToList(nessy);
     assertEquals(true, zoo.checkAnimalIsInTheList(griffin));
+  }
+
+  @Test
+  public void checkCanSellAnimal() {
+   zoo.addAnimalToList(griffin);
+   zoo.addAnimalToList(dragon);
+   zoo.addAnimalToList(nessy); 
+   zoo.sellAnimal(dragon);
+   assertEquals(12000.00, zoo.getMoney(), 0.01);
+   assertEquals(2, zoo.getNumberAnimals());
   }
 
 }

@@ -8,7 +8,7 @@ public class ManticoreTest {
 
   @Before
   public void before() {
-    manticore = new Manticore("Manty", "Miiiirrrr", 8, 1, 12.00, 7, "Medium Wing");
+    manticore = new Manticore("Manty", "Miiiirrrr", 8, 1, 12.00, 7, "Medium Wing", 3500.00);
   }
 
   @Test

@@ -8,7 +8,7 @@ public class NessyTest {
 
   @Before
   public void before() {
-    nessy = new Nessy("Nessy", "Glup glup Gluuupp", 2000, 5, 30.00, 5);
+    nessy = new Nessy("Nessy", "Glup glup Gluuupp", 2000, 5, 30.00, 5, 9000.00);
   }
 
   @Test

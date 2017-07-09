@@ -11,8 +11,8 @@ public class SwimEnclosureTest {
   @Before
   public void before() {
     swimEnclosure = new SwimEnclosure("SwimEnclosure1", EnclosureType.SWIM, 60.00);
-    seaSerpent = new SeaSerpent("Serpentine", "Fssss", 30, 2, 20.00, 10);
-    nessy = new Nessy("Nessy", "Glup glup Gluuupp", 2000, 5, 30.00, 5);
+    seaSerpent = new SeaSerpent("Serpentine", "Fssss", 30, 2, 20.00, 10, 8000.00);
+    nessy = new Nessy("Nessy", "Glup glup Gluuupp", 2000, 5, 30.00, 5, 9000.00);
   }
 
   @Test

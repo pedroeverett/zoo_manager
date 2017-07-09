@@ -8,7 +8,7 @@ public class WereWolfTest {
 
   @Before
   public void before() {
-    wereWolf = new WereWolf("Grumpy", "Rrrrr", 2, 3, 5.00, 7, "Brown");
+    wereWolf = new WereWolf("Grumpy", "Rrrrr", 2, 3, 5.00, 7, "Brown", 2000.00);
   }
 
   @Test

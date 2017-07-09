@@ -91,9 +91,16 @@ public class Zoo {
     return false;
   }
 
-  // public void sellAnimal(Animal animal) {
-  //   if(checkAnimalIsInTheList(animal) == true && animal.sellable() == true)
-  // }
+  public void removeAnimalByName(Animal animal) {
+    this.animalList.remove(animal);
+  }
+
+  public void sellAnimal(Animal animal) {
+    if(checkAnimalIsInTheList(animal) == true && animal.sellable() == true) {
+      removeAnimalByName(animal);
+      this.money += animal.getPrice();
+    }
+  }
 
 
 }

@@ -8,7 +8,7 @@ public class DragonTest {
 
   @Before
   public void before() {
-    dragon = new Dragon("Dragonis", "Draarrr", 4, 6, 20.00, 10, "Broad Wing");
+    dragon = new Dragon("Dragonis", "Draarrr", 4, 6, 20.00, 10, "Broad Wing", 7000.00);
   }
 
   @Test

@@ -8,7 +8,7 @@ public class SeaSerpentTest {
 
   @Before
   public void before() {
-    seaSerpent = new SeaSerpent("Serpentine", "Fssss", 30, 2, 20.00, 10);
+    seaSerpent = new SeaSerpent("Serpentine", "Fssss", 30, 2, 20.00, 10, 8000.00);
   }
 
   @Test

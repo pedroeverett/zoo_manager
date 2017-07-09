@@ -5,8 +5,8 @@ public class Dragon extends Animal implements Flyable {
 
   private String wingType;
 
-  public Dragon (String name, String sound, int age, int foodLevel, double size, int dangerLevel, String wingType) {
-    super(name, sound, age, foodLevel, size, dangerLevel);
+  public Dragon (String name, String sound, int age, int foodLevel, double size, int dangerLevel, String wingType, double price) {
+    super(name, sound, age, foodLevel, size, dangerLevel, price);
     this.wingType = wingType;
   }
 

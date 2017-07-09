@@ -8,7 +8,7 @@ public class UnicornTest {
 
   @Before
   public void before() {
-    unicorn = new Unicorn("Flufy", "Prrrrr", 3, 1, 7.00, 2, "White and curly");
+    unicorn = new Unicorn("Flufy", "Prrrrr", 3, 1, 7.00, 2, "White and curly", 4000.00);
   }
 
   @Test

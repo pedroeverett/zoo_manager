@@ -8,7 +8,7 @@ public class GriffinTest {
 
   @Before
   public void before() {
-    griffin = new Griffin("Grinoidis", "Griiiiii", 10, 3, 10.00, 8, "Feather Wing");
+    griffin = new Griffin("Grinoidis", "Griiiiii", 10, 3, 10.00, 8, "Feather Wing", 3000.00);
   }
 
   @Test

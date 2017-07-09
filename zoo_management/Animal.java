@@ -9,14 +9,16 @@ public abstract class Animal implements Sellable{
   protected int foodLevel;
   protected double size;
   protected int dangerLevel;
+  protected double price;
 
-  public Animal(String name, String sound, int age, int foodLevel, double size, int dangerLevel) {
+  public Animal(String name, String sound, int age, int foodLevel, double size, int dangerLevel, double price) {
     this.name = name;
     this.sound = sound;
     this.age = age;
     this.foodLevel = foodLevel;
     this.size = size;
     this.dangerLevel = dangerLevel;
+    this.price = price;
   }
 
   public String getName() {
@@ -41,6 +43,10 @@ public abstract class Animal implements Sellable{
 
   public int getDangerLevel() {
     return this.dangerLevel;
+  }
+
+  public double getPrice() {
+    return this.price;
   }
 
   public Boolean sellable() {

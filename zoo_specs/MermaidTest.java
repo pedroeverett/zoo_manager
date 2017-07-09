@@ -8,7 +8,7 @@ public class MermaidTest {
 
   @Before
   public void before() {
-    mermaid = new Mermaid("Gina", "La la LAAAAAA", 15, 3, 5.00, 2, "Blond");
+    mermaid = new Mermaid("Gina", "La la LAAAAAA", 15, 3, 5.00, 2, "Blond", 1500.00);
   }
 
   @Test
