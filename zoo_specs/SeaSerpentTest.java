@@ -50,4 +50,10 @@ public class SeaSerpentTest {
   public void  checkSwimmable() {
     assertEquals("Swim up and down", seaSerpent.swim());
   }
+
+  @Test
+  public void candFeedAnimal() {
+    seaSerpent.feedAnimal(10);
+    assertEquals(12, seaSerpent.getFoodLevel());
+    }
 }

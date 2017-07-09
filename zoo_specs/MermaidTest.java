@@ -55,4 +55,10 @@ public class MermaidTest {
   public void  checkSwimmable() {
     assertEquals("Swim down and sit on rocks singing", mermaid.swim());
   }
+
+  @Test
+  public void candFeedAnimal() {
+    mermaid.feedAnimal(10);
+    assertEquals(13, mermaid.getFoodLevel());
+    }
 }

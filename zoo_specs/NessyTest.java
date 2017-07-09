@@ -50,4 +50,10 @@ public class NessyTest {
   public void  checkSwimmable() {
     assertEquals("Swim around and you will never see me", nessy.swim());
   }
+
+  @Test
+  public void candFeedAnimal() {
+    nessy.feedAnimal(10);
+    assertEquals(15, nessy.getFoodLevel());
+    }
 }

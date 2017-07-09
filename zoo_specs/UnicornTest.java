@@ -51,4 +51,10 @@ public class UnicornTest {
     assertEquals("White and curly", unicorn.getHorn());
   }
 
+  @Test
+  public void candFeedAnimal() {
+    unicorn.feedAnimal(10);
+    assertEquals(11, unicorn.getFoodLevel());
+    }
+
 }

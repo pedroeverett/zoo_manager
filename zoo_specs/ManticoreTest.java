@@ -56,4 +56,10 @@ public class ManticoreTest {
     assertEquals("Fly high and far away", manticore.fly());
   }
 
+  @Test
+  public void candFeedAnimal() {
+    manticore.feedAnimal(10);
+    assertEquals(11, manticore.getFoodLevel());
+    }
+
 }

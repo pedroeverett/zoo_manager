@@ -51,4 +51,10 @@ public class WereWolfTest {
     assertEquals("Brown", wereWolf.getFurColour());
   }
 
+  @Test
+  public void candFeedAnimal() {
+    wereWolf.feedAnimal(10);
+    assertEquals(13, wereWolf.getFoodLevel());
+    }
+
 }

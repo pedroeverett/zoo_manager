@@ -56,4 +56,10 @@ public class GriffinTest {
     assertEquals("Fly high and near", griffin.fly());
   }
 
+  @Test
+  public void candFeedAnimal() {
+    griffin.feedAnimal(10);
+    assertEquals(13, griffin.getFoodLevel());
+    }
+
 }
