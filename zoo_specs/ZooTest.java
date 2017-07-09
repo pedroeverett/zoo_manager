@@ -102,4 +102,14 @@ public class ZooTest {
     assertEquals(5025.50, zoo.getMoney(), 0.01);
   }
 
+  @Test
+  public void checkVisitorCanExit() {
+    zoo.sellTicket(visitor1);
+    zoo.sellTicket(visitor2);
+    zoo.sellTicket(visitor3);
+    zoo.sellTicket(visitor4);
+    zoo.sellTicket(visitor5);
+    assertEquals(4, zoo.removeVisitorByName(visitor3));
+  }
+
 }

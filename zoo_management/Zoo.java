@@ -73,9 +73,14 @@ public class Zoo {
   public void sellTicket(Visitor visitor) {
     if(this.tickets >=1) {
       this.tickets -= 1;
-      this.visitorList.add(visitor);
+      addVisitorToList(visitor);
       this.money += discountPrice(visitor);
     }
+  }
+
+  public int removeVisitorByName(Visitor visitor) {
+    this.visitorList.remove(visitor);
+    return getNumberVisitors();
   }
 
 
