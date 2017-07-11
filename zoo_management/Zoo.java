@@ -102,5 +102,14 @@ public class Zoo {
     }
   }
 
-
+  public int numberEmptyEnclosures() {
+    int count = 0;
+    for(Enclosure enclosure : enclosureList ) {
+      if(enclosure.getNumberAnimalsInCage() == 0) {
+      count++;
+      }
+    }
+    return count;
+  }
+  
 }

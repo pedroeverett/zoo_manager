@@ -129,4 +129,12 @@ public class ZooTest {
    assertEquals(2, zoo.getNumberAnimals());
   }
 
+  @Test
+  public void checkNumberEmptyEnclosures() {
+    generalEnclosure.addAnimal(wereWolf);
+    zoo.addEnclosureToList(generalEnclosure);
+    zoo.addEnclosureToList(flyEnclosure);
+    assertEquals(1, zoo.numberEmptyEnclosures());
+  }
+
 }

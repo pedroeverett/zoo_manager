@@ -24,4 +24,6 @@ public abstract class Enclosure {
     return this.size;
   }
 
+  public abstract int getNumberAnimalsInCage();
+  
 }
