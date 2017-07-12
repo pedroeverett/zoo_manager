@@ -57,7 +57,7 @@ public class Zoo {
   public void addEnclosureToList(Enclosure enclosure) {
     this.enclosureList.add(enclosure);
   }
-
+  
   public void addVisitorToList(Visitor visitor) {
     this.visitorList.add(visitor);
   }

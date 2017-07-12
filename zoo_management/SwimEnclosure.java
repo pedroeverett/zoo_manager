@@ -9,22 +9,7 @@ public class SwimEnclosure extends Enclosure {
 
   public SwimEnclosure (String name, EnclosureType type, double size) {
     super(name, type, size);
-    this.name = name;
-    this.type = type;
-    this.size = size;
     this.cage = new ArrayList<Swimmable>();
-  }
-
-  public String getName() {
-    return this.name;
-  }
-
-  public EnclosureType getType() {
-    return this.type;
-  }
-
-  public double getSize() {
-    return this.size;
   }
 
   public int getNumberAnimalsInCage() {
