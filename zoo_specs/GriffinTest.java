@@ -60,6 +60,6 @@ public class GriffinTest {
   public void candFeedAnimal() {
     griffin.feedAnimal(10);
     assertEquals(13, griffin.getFoodLevel());
-    }
+  }
 
 }

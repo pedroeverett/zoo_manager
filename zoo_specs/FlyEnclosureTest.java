@@ -59,6 +59,4 @@ public class FlyEnclosureTest {
     flyEnclosure.addAnimal(manticore);
     assertEquals(1, flyEnclosure.randomAnimalRampage());
   }
-
-
 }

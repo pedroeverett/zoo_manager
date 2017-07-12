@@ -106,7 +106,7 @@ public class Zoo {
     int count = 0;
     for(Enclosure enclosure : enclosureList ) {
       if(enclosure.getNumberAnimalsInCage() == 0) {
-      count++;
+        count++;
       }
     }
     return count;

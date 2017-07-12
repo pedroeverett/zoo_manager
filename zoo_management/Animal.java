@@ -60,5 +60,4 @@ public abstract class Animal implements Sellable{
     this.foodLevel += food;
   }
 
-
 }

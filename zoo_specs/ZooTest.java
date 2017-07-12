@@ -127,14 +127,14 @@ public class ZooTest {
    zoo.sellAnimal(dragon);
    assertEquals(12000.00, zoo.getMoney(), 0.01);
    assertEquals(2, zoo.getNumberAnimals());
-  }
+ }
 
-  @Test
-  public void checkNumberEmptyEnclosures() {
-    generalEnclosure.addAnimal(wereWolf);
-    zoo.addEnclosureToList(generalEnclosure);
-    zoo.addEnclosureToList(flyEnclosure);
-    assertEquals(1, zoo.numberEmptyEnclosures());
-  }
+ @Test
+ public void checkNumberEmptyEnclosures() {
+  generalEnclosure.addAnimal(wereWolf);
+  zoo.addEnclosureToList(generalEnclosure);
+  zoo.addEnclosureToList(flyEnclosure);
+  assertEquals(1, zoo.numberEmptyEnclosures());
+ }
 
 }

@@ -60,5 +60,5 @@ public class MermaidTest {
   public void candFeedAnimal() {
     mermaid.feedAnimal(10);
     assertEquals(13, mermaid.getFoodLevel());
-    }
+  }
 }

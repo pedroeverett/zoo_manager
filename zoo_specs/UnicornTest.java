@@ -55,6 +55,6 @@ public class UnicornTest {
   public void candFeedAnimal() {
     unicorn.feedAnimal(10);
     assertEquals(11, unicorn.getFoodLevel());
-    }
+  }
 
 }

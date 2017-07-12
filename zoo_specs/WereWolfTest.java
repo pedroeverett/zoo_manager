@@ -55,6 +55,6 @@ public class WereWolfTest {
   public void candFeedAnimal() {
     wereWolf.feedAnimal(10);
     assertEquals(13, wereWolf.getFoodLevel());
-    }
+  }
 
 }

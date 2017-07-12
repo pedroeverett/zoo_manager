@@ -60,5 +60,5 @@ public class DragonTest {
   public void candFeedAnimal() {
     dragon.feedAnimal(10);
     assertEquals(16, dragon.getFoodLevel());
-    }
+  }
 }

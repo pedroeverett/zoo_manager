@@ -52,18 +52,18 @@ public class FlyEnclosure extends Enclosure {
   public void addAnimalIfTheyWontEatEachOther(Flyable newAnimal) {
     double animalSize = newAnimal.getSize();
     for (Flyable animal : cage)
-    if (animalSize <= this.size && animal.getDangerLevel() == newAnimal.getDangerLevel()) {
-      this.cage.add(newAnimal);
-      this.size -= animalSize;
+      if (animalSize <= this.size && animal.getDangerLevel() == newAnimal.getDangerLevel()) {
+        this.cage.add(newAnimal);
+        this.size -= animalSize;
+      }
     }
-  }
 
-  public int randomAnimalRampage() {
+    public int randomAnimalRampage() {
       Random ramp = new Random();
       int cageSize = this.getNumberAnimalsInCage();
       int index = ramp.nextInt(cageSize);
       removeAnimalByIndex(index);
       return getNumberAnimalsInCage();
-  }
+    }
 
-}
+  }

@@ -60,6 +60,6 @@ public class ManticoreTest {
   public void candFeedAnimal() {
     manticore.feedAnimal(10);
     assertEquals(11, manticore.getFoodLevel());
-    }
+  }
 
 }

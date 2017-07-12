@@ -56,6 +56,4 @@ public class SwimEnclosureTest {
     swimEnclosure.addAnimal(nessy);
     assertEquals(1, swimEnclosure.randomAnimalRampage());
   }
-
-
 }

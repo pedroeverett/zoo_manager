@@ -55,5 +55,5 @@ public class NessyTest {
   public void candFeedAnimal() {
     nessy.feedAnimal(10);
     assertEquals(15, nessy.getFoodLevel());
-    }
+  }
 }

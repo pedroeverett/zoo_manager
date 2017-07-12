@@ -55,5 +55,5 @@ public class SeaSerpentTest {
   public void candFeedAnimal() {
     seaSerpent.feedAnimal(10);
     assertEquals(12, seaSerpent.getFoodLevel());
-    }
+  }
 }
